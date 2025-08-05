@@ -138,7 +138,14 @@ PS C:\Users\HP\Dev\my-shopping-cart> npm run dev
 
 Tässä kuvassa näkyy, että kehityspalvelin on käynnissä ja sovellus toimii selaimessa.
 
-![Vite toimii](./src/Vite-kuva.png)
+---
+
+## 🖼️ Näyttökuva: Vite-sovellus toimii selaimessa
+
+Tässä näkyy, että kehityspalvelin toimii ja projekti toimii selaimessa:
+
+![Vite toimii](src/assets/Vite-kuva.png)
 
 
+Tehtävä valmis ! 
 ```
