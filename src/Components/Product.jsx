@@ -1,26 +1,13 @@
-// src/Components/ProductList.jsx
+// src/Components/Product.jsx
 
-import Product from "./Product";
-
-const products = [
-  { id: 1, name: "Sony A80L 55 4K OLED", price: 1200.0 },
-  { id: 2, name: "Apple iPhone 15 128 Gt -phone, Black", price: 699.0 },
-  { id: 3, name: "Apple MacBook Pro 14", price: 1999.0 },
-];
-
-function ProductList({ onAddToCart }) {
+function Product({ product, onAddToCart }) {
   return (
     <div>
-      <h2>Products</h2>
-      {products.map((product) => (
-        <Product
-          key={product.id}
-          product={product}
-          onAddToCart={onAddToCart}
-        />
-      ))}
+      <h3>{product.name}</h3>
+      <p>Hinta: {product.price} €</p>
+      <button onClick={() => onAddToCart(product)}>Lisää ostoskoriin</button>
     </div>
   );
 }
 
-export default ProductList;
+export default Product;
