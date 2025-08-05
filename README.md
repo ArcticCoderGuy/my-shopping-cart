@@ -73,6 +73,7 @@ npm run dev
 
 
 ✅ Vaihe 3: Kansiorakenteen korjaus
+
 Huomasin että projektikansio oli luotu sisäkkäin: my-shopping-cart/my-shopping-cart. Opin käyttämään PowerShell-komentoja (Move-Item, Remove-Item) ja sain selkeytettyä rakenteen siistiksi ja yksitasoiseksi. Tämä vahvisti ymmärrystä siitä, miten kansiorakennetta hallitaan komentorivillä.
 
 ✅ Vaihe 4: Komponenttien valmistelu
@@ -103,5 +104,35 @@ PS C:\Users\HP\Dev\my-shopping-cart> npm run dev
   ➜  press h + enter to show help
 
 
+---
+
+## 🛠️ To-Do: Vaiheet 6–10 – Komponenttien rakentaminen ja yhdistäminen
+
+### 🔁 Edistyvä kehityslista
+
+- [ ] **6. Toteuta `ProductList.jsx`**
+  - Luo array tuotteista (id, name, price)
+  - Käytä `map()` listan renderöintiin
+  - Käytä `Product`-komponenttia ja anna propsit: `product`, `onAddToCart`
+
+- [ ] **7. Muokkaa `App.jsx` hallitsemaan tilaa**
+  - Lisää ostoskorin tila: `cartItems`, `setCartItems`
+  - Lisää `addToCart(product)` ja `removeFromCart(productId)`
+  - Vie nämä propseina `ProductList` ja `Cart`-komponenteille
+
+- [ ] **8. Toteuta `Cart.jsx` (aiemmin ShoppingCart.jsx)**
+  - Näytä ostoskorin tuotteet, määrä ja hinta
+  - Laske `total` käyttäen `.reduce()`
+  - Lisää "Remove one" -nappi
+
+- [ ] **9. Lisää kaikki komponentit App.jsx:n näkymään**
+  - Lisää `<ProductList onAddToCart={addToCart} />`
+  - Lisää `<Cart items={cartItems} onRemove={removeFromCart} />`
+
+- [ ] **10. Tee commit + päivitä `README.md`**
+  - Kirjoita reflektointi vaiheista 6–10
+  - Commit: `git add . && git commit -m "Vaiheet 6–10 tehty" && git push`
+
+---
 
 
