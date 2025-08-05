@@ -1,7 +1,6 @@
 # my-shopping-cart
+
 EduNord assignment
-
-
 
 # 🛒 My Shopping Cart
 
@@ -36,17 +35,16 @@ As a student, I started this project locally to understand how real-world develo
 - Connected the local repo using:
   ```bash
   git remote add origin https://github.com/ArcticCoderGuy/my-shopping-cart.git
+  ```
 
 my-shopping-cart/
 ├── src/
-│   ├── main.jsx
-│   ├── App.jsx
-│   └── Components/
-│       ├── Product.jsx
-│       ├── ProductList.jsx
-│       └── ShoppingCart.jsx
-
-
+│ ├── main.jsx
+│ ├── App.jsx
+│ └── Components/
+│ ├── Product.jsx
+│ ├── ProductList.jsx
+│ └── ShoppingCart.jsx
 
 Starting to do Vite from here
 
@@ -55,7 +53,6 @@ Starting to do Vite from here
 ---
 
 ## 🔁 Reflektio: Vaiheet 1–5 tehtynä
-
 
 ### ✅ Vaihe 1: Projektin alustus Vite-komennolla
 
@@ -110,29 +107,38 @@ PS C:\Users\HP\Dev\my-shopping-cart> npm run dev
 
 ### 🔁 Edistyvä kehityslista
 
-- [ ] **6. Toteuta `ProductList.jsx`**
+- [OK] **6. Toteuta `ProductList.jsx`**
   - Luo array tuotteista (id, name, price)
   - Käytä `map()` listan renderöintiin
   - Käytä `Product`-komponenttia ja anna propsit: `product`, `onAddToCart`
 
-- [ ] **7. Muokkaa `App.jsx` hallitsemaan tilaa**
+- [OK] **7. Muokkaa `App.jsx` hallitsemaan tilaa**
   - Lisää ostoskorin tila: `cartItems`, `setCartItems`
   - Lisää `addToCart(product)` ja `removeFromCart(productId)`
   - Vie nämä propseina `ProductList` ja `Cart`-komponenteille
 
-- [ ] **8. Toteuta `Cart.jsx` (aiemmin ShoppingCart.jsx)**
+- [Ok] **8. Toteuta `Cart.jsx` (aiemmin ShoppingCart.jsx)**
   - Näytä ostoskorin tuotteet, määrä ja hinta
   - Laske `total` käyttäen `.reduce()`
   - Lisää "Remove one" -nappi
 
-- [ ] **9. Lisää kaikki komponentit App.jsx:n näkymään**
+- [OK] **9. Lisää kaikki komponentit App.jsx:n näkymään**
   - Lisää `<ProductList onAddToCart={addToCart} />`
   - Lisää `<Cart items={cartItems} onRemove={removeFromCart} />`
 
-- [ ] **10. Tee commit + päivitä `README.md`**
+- [OK] **10. Tee commit + päivitä `README.md`**
   - Kirjoita reflektointi vaiheista 6–10
   - Commit: `git add . && git commit -m "Vaiheet 6–10 tehty" && git push`
 
 ---
 
+---
 
+## 🖼️ Vite toimii selaimessa
+
+Tässä kuvassa näkyy, että kehityspalvelin on käynnissä ja sovellus toimii selaimessa.
+
+![Vite toimii](./src/Vite-kuva.png)
+
+
+```
