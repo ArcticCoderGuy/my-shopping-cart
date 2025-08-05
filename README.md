@@ -50,6 +50,58 @@ my-shopping-cart/
 
 Starting to do Vite from here
 
+---
+
+---
+
+## 🔁 Reflektio: Vaiheet 1–5 tehtynä
+
+
+### ✅ Vaihe 1: Projektin alustus Vite-komennolla
+
+Projektin moderni alustus tehtiin komennolla:
+
+```bash
+npm create vite@latest my-shopping-cart -- --template react
+
+✅ Vaihe 2: Asennukset ja käynnistys
+Siirryin oikeaan kansioon ja ajoin:
+
+npm install
+npm run dev
+
+
+
+✅ Vaihe 3: Kansiorakenteen korjaus
+Huomasin että projektikansio oli luotu sisäkkäin: my-shopping-cart/my-shopping-cart. Opin käyttämään PowerShell-komentoja (Move-Item, Remove-Item) ja sain selkeytettyä rakenteen siistiksi ja yksitasoiseksi. Tämä vahvisti ymmärrystä siitä, miten kansiorakennetta hallitaan komentorivillä.
+
+✅ Vaihe 4: Komponenttien valmistelu
+Loin src/Components/-kansion ja tiedostot:
+
+Product.jsx
+
+ProductList.jsx
+
+ShoppingCart.jsx
+
+Aloitin Product.jsx:n toteutuksen ja opin, miten propsit toimivat React-komponentin sisällä, ja miten niitä voi käyttää esimerkiksi tuotetietojen näyttämiseen ja napin klikkauksen käsittelemiseen.
+
+✅ Vaihe 5: Projekti on nyt siisti ja toimiva
+Nyt projektirakenne on kunnossa, Vite toimii, komponentteja aletaan rakentaa vaiheittain, ja kehitystyö voi jatkua loogisesti. Tärkein oppi tässä vaiheessa oli versiohallinnan, komentorivin ja komponenttiajattelun yhdistäminen käytännössä.
+
+PS C:\Users\HP\Dev\my-shopping-cart> npm run dev
+
+> my-shopping-cart@0.0.0 dev
+> vite
+
+13.38.47 [vite] (client) Re-optimizing dependencies because vite config has changed
+
+  VITE v7.0.6  ready in 2054 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+
 
 
 
